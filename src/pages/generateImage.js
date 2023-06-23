@@ -4,9 +4,12 @@ import axios from 'axios';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Button from '@material-ui/core/Button';
 
+const imgContainer = document.getElementById('imgContainer');
+
 export default class ImageGenerator extends Component {
   generateImage = async () => {
-    //Generate the image HERE
+    //Need to call the backend, which will then fetch the image from API
+    console.log(imgContainer);
     console.log('Generate an image');
   };
   render() {
